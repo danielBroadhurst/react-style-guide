@@ -1,0 +1,7 @@
+.fixed-container {
+  display: block !important;
+}
+
+.fixed-container .side-nav {
+  position: relative;
+}
