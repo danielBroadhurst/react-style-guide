@@ -23,6 +23,10 @@
 .items-center {
   align-items: center !important;
 }
+.siteMaxWidth {
+  margin: 0 auto;
+  max-width: 1440px;
+}
 
 /* Padding Classes */
 .p0 {

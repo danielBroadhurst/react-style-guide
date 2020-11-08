@@ -72,7 +72,14 @@ function PatternLibrary() {
           </Route>
           <Route path="/components/:type/:id" component={Content}></Route>
         </Switch>
-        <Footer></Footer>
+        <ContentCrate>
+          <ContentColumn size={"wide"}>
+            <p className="pb4">
+              This is the Content which is placed before the Footer.
+            </p>
+            <Footer></Footer>
+          </ContentColumn>
+        </ContentCrate>
       </Container>
     </div>
   );

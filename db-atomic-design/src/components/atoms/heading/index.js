@@ -1,7 +1,7 @@
 import React from "react";
 
-function Heading({ Tag, classes, children }) {
-  return <Tag className={classes}>{children}</Tag>;
+function Heading({ Tag, size = "large", children }) {
+  return <Tag className={"heading--" + size}>{children}</Tag>;
 }
 
 export default Heading;
