@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
-import PageWithSideNav from "./containers/Pages/PageWithSideNav";
+import PatternLibrary from "./components/pages/patternLibrary";
+import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <PageWithSideNav />
+      <PatternLibrary />
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
