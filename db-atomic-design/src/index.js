@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import PageWithSideNav from "./containers/Pages/PageSideNav/PageWithSideNav";
 import { BrowserRouter as Router } from "react-router-dom";
+import PageWithSideNav from "./containers/Pages/PageWithSideNav";
 
 ReactDOM.render(
   <React.StrictMode>

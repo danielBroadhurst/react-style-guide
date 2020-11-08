@@ -1,15 +1,15 @@
 import React from "react";
-import SideNavLinks from "../SideNavLinks/SideNavLinks";
-import SidenavSearch from "../SideNavSearch/SideNavSearch";
+import SideNavGroup from "../../atoms/SideNavGroup/SideNavGroup";
+import SidenavSearch from "../../molecules/SideNavSearch/SideNavSearch";
 import "./SideNav.css";
 
-function SideNav() {
+function SideNav({ links }) {
   return (
     <div>
       <nav className="side-nav">
         <div>
           <SidenavSearch></SidenavSearch>
-          <SideNavLinks></SideNavLinks>
+          <SideNavGroup navLinks={links}></SideNavGroup>
         </div>
       </nav>
     </div>
