@@ -1,6 +1,7 @@
 /* @flow */
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import "./styles.css";
 
 const content = {
   outline: "1px solid #eee",
@@ -16,6 +17,6 @@ const sideNav = {
 storiesOf("Side Nav", module).add("Side Nav", () => (
   <div className="flexWrap" style={content}>
     <div className="sideNav" style={sideNav} />
-    <div className="content" style={content} />
+    <div className="container" style={content} />
   </div>
 ));

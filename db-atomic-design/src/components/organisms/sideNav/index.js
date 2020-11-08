@@ -1,5 +1,5 @@
 import React from "react";
-import NavGroup from "../../atoms/navGroup";
+import NavGroup from "../../molecules/navGroup";
 import NavSearch from "../../molecules/navSearch";
 import "../../templates/patternLibrary/styles.css";
 
