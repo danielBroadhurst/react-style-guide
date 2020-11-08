@@ -9,12 +9,11 @@ const importView = (id, type) =>
 
 function Content(props) {
   const { id, type } = useParams();
-  console.log(id, type);
   const Component = importView(id, type);
   return (
     <div className="px3">
       <h1>{id}</h1>
-      <React.Suspense fallback="Loading charts...">
+      <React.Suspense fallback="Loading page...">
         <div className="fixed-container">
           <Component />
         </div>

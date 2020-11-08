@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-function Header() {
+function Header({ children }) {
   return (
     <header role="banner">
       <div className="flex items-center justify-between py3 px3 lg-px7 mb3 lg-mb7 color-textBlackSoft bg-grayNatural">
@@ -14,9 +14,7 @@ function Header() {
               alt="Logo"
             />
           </a>
-          <span className="text-md text-bold pl3">
-            Starbucks Pattern Library
-          </span>
+          <span className="text-md text-bold pl3">{children}</span>
         </div>
       </div>
     </header>

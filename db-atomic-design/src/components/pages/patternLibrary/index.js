@@ -6,6 +6,8 @@ import Header from "../../organisms/header";
 import Heading from "../../atoms/heading";
 import Content from "../../molecules/content";
 import Footer from "../../molecules/footer";
+import ContentCrate from "../../atoms/contentCrate";
+import ContentColumn from "../../atoms/contentColumn";
 
 const navLinks = [
   {
@@ -59,10 +61,14 @@ function PatternLibrary() {
     <div className="flexWrap">
       <SideNav links={navLinks}></SideNav>
       <Container>
-        <Header></Header>
+        <Header>Pattern Library</Header>
         <Switch>
           <Route exact path="/">
-            <Heading Tag={"h1"}>Please select a topic.</Heading>
+            <ContentCrate>
+              <ContentColumn size={"wide"}>
+                <Heading Tag={"h1"}>Please select a topic.</Heading>
+              </ContentColumn>
+            </ContentCrate>
           </Route>
           <Route path="/components/:type/:id" component={Content}></Route>
         </Switch>
